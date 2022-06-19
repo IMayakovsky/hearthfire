@@ -1,0 +1,352 @@
+[
+	{
+		"Id": 9,
+		"Name": "Basement",
+		"Image": null,
+		"Rooms": [
+			{
+				"Name": "Washing Room",
+				"Id": 990,
+				"Image": "/washingRoom/washingRoom.png",
+				"ElectricityConsumption": 100,
+				"Items": [
+					{
+						"DataId": 28,
+						"Pos": 15,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 29,
+						"Pos": 16,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 30,
+						"Pos": 17,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 31,
+						"Pos": 18,
+						"BrokenUntil": "0",
+						"Status": "100"
+					}
+				]
+			}
+		]
+	},
+	{
+		"Id": 0,
+		"Name": "Ground Floor",
+		"Image": null,
+		"Rooms": [
+			{
+				"Name": "Kitchen",
+				"Id": 10,
+				"Image": "/kitchen/kitchen.png",
+				"ElectricityConsumption": 100,
+				"Items": [
+					{
+						"DataId": 12,
+						"Pos": 1,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 13,
+						"Pos": 2,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 14,
+						"Pos": 3,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 15,
+						"Pos": 4,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 16,
+						"Pos": 5,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 17,
+						"Pos": 6,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 18,
+						"Pos": 7,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 19,
+						"Pos": 8,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 20,
+						"Pos": 9,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 21,
+						"Pos": 10,
+						"BrokenUntil": "0",
+						"Status": "100"
+					}
+				]
+			},
+			{
+				"Name": "Main Bathroom",
+				"Id": 0,
+				"Image": "/bathroom/bathroom.png",
+				"ElectricityConsumption": 100,
+				"Items": [
+					{
+						"DataId": 1,
+						"Pos": 15,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 2,
+						"Pos": 17,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 0,
+						"Pos": 16,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 32,
+						"Pos": 1,
+						"BrokenUntil": "0",
+						"Status": "100"
+					}
+				]
+			},
+			{
+				"Name": "Parent's Bedroom",
+				"Id": 20,
+				"Image": "/parentBedroom/bedroom.png",
+				"ElectricityConsumption": 100,
+				"Items": [
+					{
+						"DataId": 8,
+						"Pos": 8,
+						"BrokenUntil": "0",
+						"Status": "1"
+					},
+					{
+						"DataId": 9,
+						"Pos": 10,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 10,
+						"Pos": 1,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 11,
+						"Pos": 12,
+						"BrokenUntil": "0",
+						"Status": "100"
+					}
+				]
+			},
+			{
+				"Name": "Main Living Room",
+				"Id": 30,
+				"Image": "/livingRoom/fireplace.png",
+				"ElectricityConsumption": 100,
+				"Items": [
+					{
+						"DataId": 23,
+						"Pos": 8,
+						"BrokenUntil": "0",
+						"Status": "1"
+					},
+					{
+						"DataId": 24,
+						"Pos": 10,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 26,
+						"Pos": 12,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 26,
+						"Pos": 13,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 33,
+						"Pos": 3,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 34,
+						"Pos": 2,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 35,
+						"Pos": 1,
+						"BrokenUntil": "0",
+						"Status": "100"
+					}
+				]
+			}
+		]
+	},
+	{
+		"Id": 1,
+		"Name": "First Floor",
+		"Image": null,
+		"Rooms": [
+			{
+				"Name": "Alexandra's Bedroom",
+				"Id": 120,
+				"Image": null,
+				"ElectricityConsumption": 100,
+				"Items": [
+					{
+						"DataId": 36,
+						"Pos": 8,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 37,
+						"Pos": 10,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 38,
+						"Pos": 12,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 39,
+						"Pos": 13,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 40,
+						"Pos": 2,
+						"BrokenUntil": "0",
+						"Status": "100"
+					}
+				]
+			},
+			{
+				"Name": "Daniel's Bedroom",
+				"Id": 121,
+				"Image": "/babyRoom/babyRoom.png",
+				"ElectricityConsumption": 30,
+				"Items": [
+					{
+						"DataId": 22,
+						"Pos": 2,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 41,
+						"Pos": 4,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 42,
+						"Pos": 18,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 43,
+						"Pos": 8,
+						"BrokenUntil": "0",
+						"Status": "100"
+					}
+				]
+			}
+		]
+	},
+	{
+		"Id": 2,
+		"Name": "Second Floor",
+		"Image": null,
+		"Rooms": [
+			{
+				"Name": "Office Room",
+				"Id": 270,
+				"Image": "/officeRoom/officeRoom.png",
+				"ElectricityConsumption": 30,
+				"Items": [
+					{
+						"DataId": 48,
+						"Pos": 9,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 49,
+						"Pos": 2,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 50,
+						"Pos": 4,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 51,
+						"Pos": 5,
+						"BrokenUntil": "0",
+						"Status": "100"
+					},
+					{
+						"DataId": 52,
+						"Pos": 8,
+						"BrokenUntil": "0",
+						"Status": "100"
+					}
+				]
+			}
+		]
+	}
+]

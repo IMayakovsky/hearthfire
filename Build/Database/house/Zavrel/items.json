@@ -1,0 +1,274 @@
+[
+	{
+		"Id": 0,
+		"Name": "Bath",
+		"Image": "/bathroom/bath.png",
+		"MeterType": 3,
+		"Consumption": 10,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 1,
+		"Name": "Toilet",
+		"Image": "/bathroom/toilet.png",
+		"MeterType": 3,
+		"Consumption": 10,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 2,
+		"Name": "Sink",
+		"Image": "/bathroom/sink.png",
+		"MeterType": 3,
+		"Consumption": 10,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 4,
+		"Name": "Toilet",
+		"Image": "/bathroom/toilet.png",
+		"MeterType": 3,
+		"Consumption": 10,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 5,
+		"Name": "Sink",
+		"Image": "/bathroom/sink.png",
+		"MeterType": 3,
+		"Consumption": 10,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 6,
+		"Name": "Window",
+		"Image": "/win.png",
+		"MeterType": 0,
+		"Consumption": 0,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 10,
+		"Name": "Bed",
+		"Image": "/parentBedroom/bed.png",
+		"MeterType": 0,
+		"Consumption": 0,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 37,
+		"Name": "Wardrobe",
+		"Image": "/parentBedroom/wardrobe.png",
+		"MeterType": 0,
+		"Consumption": 0,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 12,
+		"Name": "Kitchen Table",
+		"Image": "/kitchen/table.png",
+		"MeterType": 0,
+		"Consumption": 0,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 13,
+		"Name": "Kitchen Sink",
+		"Image": "/kitchen/sink.png",
+		"MeterType": 2,
+		"Consumption": 10,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 14,
+		"Name": "Dishwasher",
+		"Image": "/kitchen/dishwasher.png",
+		"MeterType": 2,
+		"Consumption": 10,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 15,
+		"Name": "Kitchen Cabinet",
+		"Image": "/kitchen/cabinet.png",
+		"MeterType": 0,
+		"Consumption": "00",
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 16,
+		"Name": "Microwave",
+		"Image": "/kitchen/microwave.png",
+		"MeterType": 1,
+		"Consumption": 10,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 17,
+		"Name": "Oven",
+		"Image": "/kitchen/oven.png",
+		"MeterType": 1,
+		"Consumption": 10,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 19,
+		"Name": "Kettle",
+		"Image": "/kitchen/kettle.png",
+		"MeterType": 1,
+		"Consumption": 10,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 21,
+		"Name": "Fridge",
+		"Image": "/kitchen/fridge.png",
+		"MeterType": 1,
+		"Consumption": 10,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 26,
+		"Name": "TV",
+		"Image": "/livingRoom/tv.png",
+		"MeterType": 1,
+		"Consumption": 20,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 28,
+		"Name": "Dryer",
+		"Image": "/bathroom/dryer.png",
+		"MeterType": 0,
+		"Consumption": 0,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 29,
+		"Name": "Iron",
+		"Image": "/bathroom/iron.png",
+		"MeterType": 1,
+		"Consumption": 20,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 30,
+		"Name": "Shelves",
+		"Image": "/bathroom/shelves.png",
+		"MeterType": 0,
+		"Consumption": 0,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 31,
+		"Name": "WashingMachine",
+		"Image": "/bathroom/washingMachine.png",
+		"MeterType": 0,
+		"Consumption": 0,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 32,
+		"Name": "Shower",
+		"Image": "/bathroom/shower.png",
+		"MeterType": 0,
+		"Consumption": 0,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 33,
+		"Name": "Sofa",
+		"Image": "/livingRoom/sofa.png",
+		"MeterType": 0,
+		"Consumption": 0,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 34,
+		"Name": "Chair",
+		"Image": "/livingRoom/chair.png",
+		"MeterType": 0,
+		"Consumption": 0,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 36,
+		"Name": "Bed",
+		"Image": "/misaBedroom/bed.png",
+		"MeterType": 0,
+		"Consumption": 0,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 37,
+		"Name": "Wardrobe",
+		"Image": "/misaBedroom/wardrobe.png",
+		"MeterType": 0,
+		"Consumption": 0,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 120,
+		"Name": "Work Table",
+		"Image": "/misaBedroom/table.png",
+		"MeterType": 0,
+		"Consumption": 0,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 43,
+		"Name": "Game",
+		"Image": "/patrikBedroom/game.png",
+		"MeterType": 0,
+		"Consumption": 0,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 45,
+		"Name": "Bed",
+		"Image": "/patrikBedroom/bed.png",
+		"MeterType": 0,
+		"Consumption": 0,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 44,
+		"Name": "TV",
+		"Image": "/patrikBedroom/tv.png",
+		"MeterType": 0,
+		"Consumption": 0,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 42,
+		"Name": "Table",
+		"Image": "/patrikBedroom/table.png",
+		"MeterType": 0,
+		"Consumption": 0,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 48,
+		"Name": "Clock",
+		"Image": "/livingRoom/clock.png",
+		"MeterType": 0,
+		"Consumption": 0,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 51,
+		"Name": "Cabinet",
+		"Image": "/livingRoom/cabinet.png",
+		"MeterType": 0,
+		"Consumption": 0,
+		"RepairComplexity": 1
+	},
+	{
+		"Id": 52,
+		"Name": "Coffee Machine",
+		"Image": "/kitchen/coffeeMachine.png",
+		"MeterType": 0,
+		"Consumption": 0,
+		"RepairComplexity": 1
+	}
+]

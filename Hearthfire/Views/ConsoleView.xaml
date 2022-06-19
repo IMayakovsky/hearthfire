@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="Hearthfire.Views.ConsoleView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Hearthfire.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="550" d:DesignWidth="600">
+    
+    <Grid Background="#E0E0E0">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="500"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <ScrollViewer Grid.Row="0" HorizontalScrollBarVisibility="Hidden" >
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center">
+                <ItemsControl Width="500" ItemsSource="{Binding Messages, Mode=OneWay}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Margin="10" Height="50" Background="AliceBlue">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="400"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBox Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center"
+                                         Background="Transparent" BorderThickness="0" Margin="10 10" Text="{Binding Date}"/>
+                                <TextBox Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" 
+                                         Background="Transparent" BorderThickness="0" Margin="5 10" Text="{Binding Text}"/>
+                            </Grid>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+        </ScrollViewer>
+
+        <Grid Grid.Row="1">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+            <Button Grid.Column="0" Margin="150,0,0,0" 
+                Width="30" Height="30"  Command="{Binding WriteCommand}">
+                <Image Height="20" Width="20" Source="/Database/images/menu/write.png"/>
+            </Button>
+            <Button Grid.Column="1" Grid.Row="1" Margin="0,0,150,0" 
+                Width="30" Height="30" Command="{Binding OpenFolderCommand}">
+                <Image Height="20" Width="20" Source="/Database/images/menu/folder.png"/>
+            </Button>
+
+        </Grid>
+        
+    </Grid>
+    
+</UserControl>

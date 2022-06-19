@@ -1,0 +1,77 @@
+﻿<UserControl x:Class="Hearthfire.Views.OptionsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Hearthfire.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="600">
+
+    <Grid Width="600">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="260"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="240"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0" Grid.ColumnSpan="3" BorderBrush="Black" BorderThickness="0 1 0 0"/>
+
+        <TextBlock Grid.Column="0" Text="{Binding FamilyName}" VerticalAlignment="Center"
+                        HorizontalAlignment="Center" Margin="0 0 10 0"/>
+
+        <Grid Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" Margin="0,0,10,0" HorizontalAlignment="Right"
+                Width="30" Height="30" Command="{Binding BackCommand}">
+                <Image Height="20" Width="20" Source="/Database/Images/menu/back.png"/>
+            </Button>
+
+            <Button Grid.Column="1" HorizontalAlignment="Center"
+                Command="{Binding HomeCommand}" Width="30" Height="30" >
+                <Image Height="20" Width="20" Source="/Database/Images/house.png"/>
+            </Button>
+
+        </Grid>
+
+        <Grid Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="40"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="{Binding DateText}" 
+                       VerticalAlignment="Center" HorizontalAlignment="Center" />
+
+            <Grid Grid.Row="1" Width="90">
+                <Button HorizontalAlignment="Left" Command="{Binding IncreaseSpeedCommand}">
+                    <Image Height="20" Width="20" Source="{Binding ChangeSpeedImage}"/>
+                </Button>
+                <Button Height="25" Width="25" HorizontalAlignment="Right" Command="{Binding DecreaseSpeedCommand}">
+                    <Image Height="20" Width="20" Source="{Binding ChangeSpeedImage}" 
+                           RenderTransformOrigin=".5,.5">
+                        <Image.RenderTransform>
+                            <RotateTransform Angle="180" />
+                        </Image.RenderTransform>
+                    </Image>
+                </Button>
+            </Grid>
+
+            <Button Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" Width="30" Height="30"
+                HorizontalAlignment="Center" Command="{Binding SwitchLifeTimeCommand}">
+                <Image Height="20" Width="20" Source="{Binding ModeImagePath}"/>
+            </Button>
+        </Grid>
+
+        
+        
+    </Grid>
+</UserControl>

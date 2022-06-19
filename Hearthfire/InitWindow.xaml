@@ -1,0 +1,28 @@
+﻿<Window x:Class="Hearthfire.InitWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hearthfire"
+        mc:Ignorable="d"
+        Title="Init" Icon="Database/Images/house.png" 
+        WindowStartupLocation="CenterScreen" Height="250" Width="350">
+    <Grid>
+
+        <Grid Margin="50 20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" FontSize="17" TextAlignment="Center" 
+                       Text="Choose your Family"/>
+
+            <Button Grid.Row="1" Content="Hvorostovsky" Margin="0 30 0 0" 
+                    Click="Hvorostovsky_Click"/>
+            <Button Grid.Row="2" Content="Zavrel" Margin="0 20 0 10" 
+                    Click="Zavrel_Click"/>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,590 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Database\Hvorostovsky\**" />
+    <Compile Remove="Database\Images\babyRoom\**" />
+    <Compile Remove="Database\Images\bathroom\**" />
+    <Compile Remove="Database\Images\bedroom\**" />
+    <Compile Remove="Database\Images\Families\**" />
+    <Compile Remove="Database\Images\kitchen\**" />
+    <Compile Remove="Database\Images\livingRoom\**" />
+    <Compile Remove="Database\Images\officeRoom\**" />
+    <Compile Remove="Database\Zavrel\**" />
+    <EmbeddedResource Remove="Database\Hvorostovsky\**" />
+    <EmbeddedResource Remove="Database\Images\babyRoom\**" />
+    <EmbeddedResource Remove="Database\Images\bathroom\**" />
+    <EmbeddedResource Remove="Database\Images\bedroom\**" />
+    <EmbeddedResource Remove="Database\Images\Families\**" />
+    <EmbeddedResource Remove="Database\Images\kitchen\**" />
+    <EmbeddedResource Remove="Database\Images\livingRoom\**" />
+    <EmbeddedResource Remove="Database\Images\officeRoom\**" />
+    <EmbeddedResource Remove="Database\Zavrel\**" />
+    <None Remove="Database\Hvorostovsky\**" />
+    <None Remove="Database\Images\babyRoom\**" />
+    <None Remove="Database\Images\bathroom\**" />
+    <None Remove="Database\Images\bedroom\**" />
+    <None Remove="Database\Images\Families\**" />
+    <None Remove="Database\Images\kitchen\**" />
+    <None Remove="Database\Images\livingRoom\**" />
+    <None Remove="Database\Images\officeRoom\**" />
+    <None Remove="Database\Zavrel\**" />
+    <Page Remove="Database\Hvorostovsky\**" />
+    <Page Remove="Database\Images\babyRoom\**" />
+    <Page Remove="Database\Images\bathroom\**" />
+    <Page Remove="Database\Images\bedroom\**" />
+    <Page Remove="Database\Images\Families\**" />
+    <Page Remove="Database\Images\kitchen\**" />
+    <Page Remove="Database\Images\livingRoom\**" />
+    <Page Remove="Database\Images\officeRoom\**" />
+    <Page Remove="Database\Zavrel\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="bath-tub.png" />
+    <None Remove="Database\house.json" />
+    <None Remove="Database\houseZavrel.json" />
+    <None Remove="Database\House\Hvorostovsky\house.json" />
+    <None Remove="Database\House\Hvorostovsky\items.json" />
+    <None Remove="Database\House\Hvorostovsky\meters.json" />
+    <None Remove="Database\House\Zavrel\house.json" />
+    <None Remove="Database\House\Zavrel\items.json" />
+    <None Remove="Database\House\Zavrel\meters.json" />
+    <None Remove="Database\Images\bed %281%29.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\AlexandraBedroom\bed.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\AlexandraBedroom\comp.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\AlexandraBedroom\drawer.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\AlexandraBedroom\dressingTable.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\AlexandraBedroom\wardrobe.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\BabyRoom\babyRoom.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\BabyRoom\castle.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\BabyRoom\cradle.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\BabyRoom\game.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\BabyRoom\table.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\Bathroom\bath.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\Bathroom\bathroom.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\Bathroom\lamp.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\Bathroom\shower.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\Bathroom\sink.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\Bathroom\toilet.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\Kitchen\babyChair.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\Kitchen\blender.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\Kitchen\cabinet.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\Kitchen\dishwasher.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\Kitchen\fridge.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\Kitchen\kettle.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\Kitchen\kitchen.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\Kitchen\microwave.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\Kitchen\oven.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\Kitchen\sink.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\Kitchen\table.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\Kitchen\toaster.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\LivingRoom\bookcase.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\LivingRoom\chair.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\LivingRoom\fireplace.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\LivingRoom\rockingChair.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\LivingRoom\sofa.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\LivingRoom\table.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\LivingRoom\tv.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\OfficeRoom\cabinet.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\OfficeRoom\clock.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\OfficeRoom\coffeeMachine.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\OfficeRoom\computer.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\OfficeRoom\officeRoom.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\OfficeRoom\table.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\ParentBedroom\bed.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\ParentBedroom\bedroom.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\ParentBedroom\bookcase.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\ParentBedroom\dressingTable.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\ParentBedroom\wardrobe.png" />
+    <None Remove="Database\Images\Hvorostovsky\Resident\Alexandra.png" />
+    <None Remove="Database\Images\Hvorostovsky\Resident\Daniel.png" />
+    <None Remove="Database\Images\Hvorostovsky\Resident\Florence.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\WashingRoom\dryer.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\WashingRoom\iron.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\WashingRoom\shelves.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\WashingRoom\washingMachine.png" />
+    <None Remove="Database\Images\Hvorostovsky\Rooms\WashingRoom\washingRoom.png" />
+    <None Remove="Database\Images\Zavrel\Resident\bara.png" />
+    <None Remove="Database\Images\Zavrel\Resident\bruno.png" />
+    <None Remove="Database\Images\Zavrel\Resident\dar.png" />
+    <None Remove="Database\Images\Zavrel\Resident\keisy.png" />
+    <None Remove="Database\Images\Zavrel\Resident\manny.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\Bathroom\bath.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\Bathroom\bathroom.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\Bathroom\lamp.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\Bathroom\shower.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\Bathroom\sink.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\Bathroom\toilet.png" />
+    <None Remove="Database\Images\MainMenu\console.png" />
+    <None Remove="Database\Images\MainMenu\domestic_animal.png" />
+    <None Remove="Database\Images\MainMenu\family.png" />
+    <None Remove="Database\Images\MainMenu\gauge.png" />
+    <None Remove="Database\Images\MainMenu\plans.png" />
+    <None Remove="Database\Images\MainMenu\settings.png" />
+    <None Remove="Database\Images\Menu\up.png" />
+    <None Remove="Database\Images\SettingsMenu\check.png" />
+    <None Remove="Database\Images\SettingsMenu\cross.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\DominikBedroom\bed.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\DominikBedroom\game.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\DominikBedroom\table.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\DominikBedroom\tv.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\Kitchen\cabinet.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\Kitchen\coffeeMachine.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\Kitchen\dishwasher.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\Kitchen\fridge.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\Kitchen\kettle.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\Kitchen\microwave.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\Kitchen\oven.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\Kitchen\sink.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\Kitchen\table.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\LivingRoom\cabinet.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\LivingRoom\chair.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\LivingRoom\clock.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\LivingRoom\sofa.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\LivingRoom\tv.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\MisaBedroom\bed.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\MisaBedroom\table.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\MisaBedroom\wardrobe.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\ParentBedroom\bed.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\ParentBedroom\bedroom.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\ParentBedroom\dressingTable.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\ParentBedroom\wardrobe.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\PatrikBedroom\bed.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\PatrikBedroom\game.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\PatrikBedroom\table.png" />
+    <None Remove="Database\Images\Zavrel\Rooms\PatrikBedroom\tv.png" />
+    <None Remove="Database\items.json" />
+    <None Remove="Database\Images\back.png" />
+    <None Remove="Database\Images\console.png" />
+    <None Remove="Database\Images\daughter.png" />
+    <None Remove="Database\Images\domestic_animal.png" />
+    <None Remove="Database\Images\farther.png" />
+    <None Remove="Database\Images\father.png" />
+    <None Remove="Database\Images\gauge.png" />
+    <None Remove="Database\Images\hippopotamus.png" />
+    <None Remove="Database\Images\house.png" />
+    <None Remove="Database\Images\lightsOff.png" />
+    <None Remove="Database\Images\lightsOn.png" />
+    <None Remove="Database\Images\Menu\back.png" />
+    <None Remove="Database\Images\Menu\folder.png" />
+    <None Remove="Database\Images\Menu\pause.png" />
+    <None Remove="Database\Images\Menu\play.png" />
+    <None Remove="Database\Images\Menu\write.png" />
+    <None Remove="Database\Images\mother.png" />
+    <None Remove="Database\Images\person.png" />
+    <None Remove="Database\Images\plans.png" />
+    <None Remove="Database\Images\section_default.png" />
+    <None Remove="Database\Images\win.png" />
+    <None Remove="Database\meters.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Database\House\Hvorostovsky\house.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\House\Hvorostovsky\items.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\House\Hvorostovsky\meters.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\House\Zavrel\house.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\House\Zavrel\items.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\House\Zavrel\meters.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MvvmCross" Version="7.1.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Prism.Core" Version="8.0.0.1909" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\AlexandraBedroom\bed.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\AlexandraBedroom\comp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\AlexandraBedroom\drawer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\AlexandraBedroom\dressingTable.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\AlexandraBedroom\wardrobe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\BabyRoom\babyRoom.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\BabyRoom\castle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\BabyRoom\cradle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\BabyRoom\game.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\BabyRoom\table.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\Bathroom\bath.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\Bathroom\bathroom.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\Bathroom\shower.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\Bathroom\sink.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\Bathroom\toilet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\Kitchen\babyChair.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\Kitchen\blender.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\Kitchen\cabinet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\Kitchen\dishwasher.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\Kitchen\fridge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\Kitchen\kettle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\Kitchen\kitchen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\Kitchen\microwave.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\Kitchen\oven.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\Kitchen\sink.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\Kitchen\table.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\Kitchen\toaster.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\LivingRoom\bookcase.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\LivingRoom\chair.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\LivingRoom\fireplace.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\LivingRoom\rockingChair.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\LivingRoom\sofa.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\LivingRoom\table.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\LivingRoom\tv.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\OfficeRoom\cabinet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\OfficeRoom\clock.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\OfficeRoom\coffeeMachine.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\OfficeRoom\computer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\OfficeRoom\officeRoom.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\OfficeRoom\table.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\ParentBedroom\bed.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\ParentBedroom\bedroom.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\ParentBedroom\bookcase.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\ParentBedroom\dressingTable.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\ParentBedroom\wardrobe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Resident\Alexandra.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Resident\Daniel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Resident\Florence.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\WashingRoom\dryer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\WashingRoom\iron.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\WashingRoom\shelves.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\WashingRoom\washingMachine.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Hvorostovsky\Rooms\WashingRoom\washingRoom.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\man.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\woman.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Resident\bara.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Resident\bruno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Resident\dar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Resident\keisy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Resident\manny.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\Bathroom\bath.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\Bathroom\bathroom.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\Bathroom\dryer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\Bathroom\iron.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\Bathroom\lamp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\Bathroom\shelves.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\Bathroom\shower.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\Bathroom\sink.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\Bathroom\toilet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\Bathroom\washingMachine.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\Bathroom\washingRoom.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\house.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\MainMenu\console.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\MainMenu\domestic_animal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\MainMenu\family.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\MainMenu\gauge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\MainMenu\plans.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\MainMenu\settings.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Menu\back.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Menu\folder.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Menu\pause.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Menu\play.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Menu\up.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Menu\write.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\section_default.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\SettingsMenu\check.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\SettingsMenu\cross.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\win.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\DominikBedroom\bed.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\DominikBedroom\game.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\DominikBedroom\table.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\DominikBedroom\tv.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\Kitchen\cabinet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\Kitchen\coffeeMachine.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\Kitchen\dishwasher.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\Kitchen\fridge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\Kitchen\kettle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\Kitchen\microwave.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\Kitchen\oven.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\Kitchen\sink.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\Kitchen\table.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\LivingRoom\cabinet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\LivingRoom\chair.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\LivingRoom\clock.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\LivingRoom\sofa.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\LivingRoom\tv.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\MisaBedroom\bed.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\MisaBedroom\table.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\MisaBedroom\wardrobe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\ParentBedroom\bed.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\ParentBedroom\bedroom.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\ParentBedroom\dressingTable.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\ParentBedroom\wardrobe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\PatrikBedroom\bed.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\PatrikBedroom\game.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\PatrikBedroom\table.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Database\Images\Zavrel\Rooms\PatrikBedroom\tv.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="ViewModels\RoomViewModel.cs">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
